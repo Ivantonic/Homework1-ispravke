@@ -1,0 +1,48 @@
+#container {
+
+background-image:url("paper.jpg");
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+overflow: auto;
+border-radius: 8px;
+box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.3);
+
+/*Glavni div, trebalo bi da predstavlja podlogu svim drugim divovima i takodje je background seamless tekstura papira*/
+/*NOTE TO SELF - nestajala mi je tekstura papira iznad selekcija koje imaju u sebi "float" property, dok nisam ubacio "overflow"
+property glavnom div-u, saznati tacno zasto*/
+
+}
+
+#header {
+
+ text-align: center;
+ padding-top: 5px;
+/*Nisam ocekivao da ce se sve ispod headera spustiti s njim kad mu dodam padding-top property*/
+
+}
+
+#content {
+
+ padding: 10px;
+ /* Children: #main, #draw */
+
+}
+
+#main {
+ padding-left:15px;
+ width:465px;
+ float: left;
+
+}
+
+#draw {
+
+ width:280px;
+ float: right;
+
+}
+
+#footer {
+
+}
